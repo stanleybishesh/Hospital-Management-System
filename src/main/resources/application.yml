@@ -1,0 +1,30 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hms
+    username: root
+    password:
+
+server:
+  port: 8081
+
+jwt:
+  refreshToken:
+    expiresIn: 172800000
+    secretKey: bZnoIcVsWCM7HvjTSMaNJ26SPsXBMU5pHzu8NxWIU1XkxCw1vn
+  accessToken:
+    expiresIn: 86400000
+    secretKey: ulll60BDXyO3OoGHuaRikY4ESOgXnrEotljOc4uJEI1ZZWlsKr
+## File Storage Properties
+# All files uploaded through the REST API will be stored in this directory
+#file:
+#  upload-dir: C:\\Users\\Bishesh Shrestha\\OneDrive\\Desktop\\Java\\Library System\\uploads
